@@ -5,22 +5,23 @@ class YodlrApi {
 
     static async getUsers() {
 
-        console.debug("Get Users");
-
-        console.log(BASE_URL)
 
         try {
             
             const response = await fetch(`${BASE_URL}/api/users`)
 
-            console.log(response)
+            if(response.ok) {
+                const users = await response.json();
 
-            const users = await response.json();
+                return users;
+            }
 
-            return users;
+            console.error("API Error:", response.status, response.statusText);
 
         } catch (err) {
-            console.error("API Error:", err);
+
+            console.error("Network error or other issue:", err);
+            
         }
 
     }
