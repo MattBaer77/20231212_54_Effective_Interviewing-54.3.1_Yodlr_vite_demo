@@ -2,7 +2,11 @@
 const Home = () => {
 
     return (
-        <h1>HOME COMPONENT</h1>
+        <div className="Home" data-testid="Home">
+
+            <h1>HOME COMPONENT</h1>
+
+        </div>
     )
 
 }

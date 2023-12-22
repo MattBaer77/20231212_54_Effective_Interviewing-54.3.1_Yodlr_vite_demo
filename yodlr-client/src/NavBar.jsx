@@ -4,7 +4,7 @@ const NavBar = () => {
 
     return (
 
-        <div className="NavBar">
+        <div className="NavBar" data-testid='NavBar'>
 
             <h2 className="wordmark">
 
