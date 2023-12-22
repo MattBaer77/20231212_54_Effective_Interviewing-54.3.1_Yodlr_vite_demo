@@ -1,6 +1,5 @@
 
 import YodlrApi from "../src/Api";
-import { expect } from 'vitest';
 
 describe('YodlrApi', () => {
 
